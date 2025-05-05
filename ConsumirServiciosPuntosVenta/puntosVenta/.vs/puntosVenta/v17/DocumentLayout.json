@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\ProyectosAplicacionesWeb\\Proyecto_PuntosVenta\\puntosVenta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92C311EF-D89E-47AF-9201-E0A6C4952396}|puntosVenta.csproj|f:\\proyectosaplicacionesweb\\proyecto_puntosventa\\puntosventa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92C311EF-D89E-47AF-9201-E0A6C4952396}|puntosVenta.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92C311EF-D89E-47AF-9201-E0A6C4952396}|puntosVenta.csproj|F:\\ProyectosAplicacionesWeb\\Proyecto_PuntosVenta\\puntosVenta\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{92C311EF-D89E-47AF-9201-E0A6C4952396}|puntosVenta.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{f2bd8fb8-fc94-3dae-a733-fd993c73cc87}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "F:\\ProyectosAplicacionesWeb\\Proyecto_PuntosVenta\\puntosVenta\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "F:\\ProyectosAplicacionesWeb\\Proyecto_PuntosVenta\\puntosVenta\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAASwBYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:38:26.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "F:\\ProyectosAplicacionesWeb\\Proyecto_PuntosVenta\\puntosVenta\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\vania\\OneDrive\\Documents\\ProyectosAplicacionesWeb\\Proyecto_PuntosVenta\\puntosVenta\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-05-05T03:38:26.873Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
