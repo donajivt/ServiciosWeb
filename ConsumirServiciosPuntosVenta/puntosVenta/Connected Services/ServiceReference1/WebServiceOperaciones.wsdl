@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioVentaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoMayoreo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="stock" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoMayoreoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="descuentoMayoreoResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioWiskey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioWiskeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioWiskeyResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioTequila">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioTequilaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioTequilaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioCerveza">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioCervezaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCervezaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioCoñaq">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioCoñaqResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCoñaqResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioMedicamentos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="precioMedicamentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioMedicamentosResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IvaExento">
+        <s:complexType />
+      </s:element>
+      <s:element name="IvaExentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IvaExentoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioVenta" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="descuentoPromocion5Result" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion6">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioVenta" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="descuentoPromocion6Result" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion7">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioVenta" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion7Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="descuentoPromocion7Result" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioVenta" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="descuentoPromocion8Result" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion9">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioVenta" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion9Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="descuentoPromocion9Result" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion10">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioVenta" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="descuentoPromocion10Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="descuentoPromocion10Result" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoCoñaq">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoCoñaqResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="impuestoCoñaqResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoWiskey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoWiskeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="impuestoWiskeyResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoTequila">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoTequilaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="impuestoTequilaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoCerveza">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoCervezaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="impuestoCervezaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoIVA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="precioCompra" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="impuestoIVAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="impuestoIVAResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="precioVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:precioVenta" />
+  </wsdl:message>
+  <wsdl:message name="precioVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:precioVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="descuentoMayoreoSoapIn">
+    <wsdl:part name="parameters" element="tns:descuentoMayoreo" />
+  </wsdl:message>
+  <wsdl:message name="descuentoMayoreoSoapOut">
+    <wsdl:part name="parameters" element="tns:descuentoMayoreoResponse" />
+  </wsdl:message>
+  <wsdl:message name="precioWiskeySoapIn">
+    <wsdl:part name="parameters" element="tns:precioWiskey" />
+  </wsdl:message>
+  <wsdl:message name="precioWiskeySoapOut">
+    <wsdl:part name="parameters" element="tns:precioWiskeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="precioTequilaSoapIn">
+    <wsdl:part name="parameters" element="tns:precioTequila" />
+  </wsdl:message>
+  <wsdl:message name="precioTequilaSoapOut">
+    <wsdl:part name="parameters" element="tns:precioTequilaResponse" />
+  </wsdl:message>
+  <wsdl:message name="precioCervezaSoapIn">
+    <wsdl:part name="parameters" element="tns:precioCerveza" />
+  </wsdl:message>
+  <wsdl:message name="precioCervezaSoapOut">
+    <wsdl:part name="parameters" element="tns:precioCervezaResponse" />
+  </wsdl:message>
+  <wsdl:message name="precioCoñaqSoapIn">
+    <wsdl:part name="parameters" element="tns:precioCoñaq" />
+  </wsdl:message>
+  <wsdl:message name="precioCoñaqSoapOut">
+    <wsdl:part name="parameters" element="tns:precioCoñaqResponse" />
+  </wsdl:message>
+  <wsdl:message name="precioMedicamentosSoapIn">
+    <wsdl:part name="parameters" element="tns:precioMedicamentos" />
+  </wsdl:message>
+  <wsdl:message name="precioMedicamentosSoapOut">
+    <wsdl:part name="parameters" element="tns:precioMedicamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IvaExentoSoapIn">
+    <wsdl:part name="parameters" element="tns:IvaExento" />
+  </wsdl:message>
+  <wsdl:message name="IvaExentoSoapOut">
+    <wsdl:part name="parameters" element="tns:IvaExentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion5SoapIn">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion5" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion5SoapOut">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion5Response" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion6SoapIn">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion6" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion6SoapOut">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion6Response" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion7SoapIn">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion7" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion7SoapOut">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion7Response" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion8SoapIn">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion8" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion8SoapOut">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion8Response" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion9SoapIn">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion9" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion9SoapOut">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion9Response" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion10SoapIn">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion10" />
+  </wsdl:message>
+  <wsdl:message name="descuentoPromocion10SoapOut">
+    <wsdl:part name="parameters" element="tns:descuentoPromocion10Response" />
+  </wsdl:message>
+  <wsdl:message name="impuestoCoñaqSoapIn">
+    <wsdl:part name="parameters" element="tns:impuestoCoñaq" />
+  </wsdl:message>
+  <wsdl:message name="impuestoCoñaqSoapOut">
+    <wsdl:part name="parameters" element="tns:impuestoCoñaqResponse" />
+  </wsdl:message>
+  <wsdl:message name="impuestoWiskeySoapIn">
+    <wsdl:part name="parameters" element="tns:impuestoWiskey" />
+  </wsdl:message>
+  <wsdl:message name="impuestoWiskeySoapOut">
+    <wsdl:part name="parameters" element="tns:impuestoWiskeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="impuestoTequilaSoapIn">
+    <wsdl:part name="parameters" element="tns:impuestoTequila" />
+  </wsdl:message>
+  <wsdl:message name="impuestoTequilaSoapOut">
+    <wsdl:part name="parameters" element="tns:impuestoTequilaResponse" />
+  </wsdl:message>
+  <wsdl:message name="impuestoCervezaSoapIn">
+    <wsdl:part name="parameters" element="tns:impuestoCerveza" />
+  </wsdl:message>
+  <wsdl:message name="impuestoCervezaSoapOut">
+    <wsdl:part name="parameters" element="tns:impuestoCervezaResponse" />
+  </wsdl:message>
+  <wsdl:message name="impuestoIVASoapIn">
+    <wsdl:part name="parameters" element="tns:impuestoIVA" />
+  </wsdl:message>
+  <wsdl:message name="impuestoIVASoapOut">
+    <wsdl:part name="parameters" element="tns:impuestoIVAResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceOperacionesSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="precioVenta">
+      <wsdl:input message="tns:precioVentaSoapIn" />
+      <wsdl:output message="tns:precioVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoMayoreo">
+      <wsdl:input message="tns:descuentoMayoreoSoapIn" />
+      <wsdl:output message="tns:descuentoMayoreoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="precioWiskey">
+      <wsdl:input message="tns:precioWiskeySoapIn" />
+      <wsdl:output message="tns:precioWiskeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="precioTequila">
+      <wsdl:input message="tns:precioTequilaSoapIn" />
+      <wsdl:output message="tns:precioTequilaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="precioCerveza">
+      <wsdl:input message="tns:precioCervezaSoapIn" />
+      <wsdl:output message="tns:precioCervezaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="precioCoñaq">
+      <wsdl:input message="tns:precioCoñaqSoapIn" />
+      <wsdl:output message="tns:precioCoñaqSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="precioMedicamentos">
+      <wsdl:input message="tns:precioMedicamentosSoapIn" />
+      <wsdl:output message="tns:precioMedicamentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IvaExento">
+      <wsdl:input message="tns:IvaExentoSoapIn" />
+      <wsdl:output message="tns:IvaExentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion5">
+      <wsdl:input message="tns:descuentoPromocion5SoapIn" />
+      <wsdl:output message="tns:descuentoPromocion5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion6">
+      <wsdl:input message="tns:descuentoPromocion6SoapIn" />
+      <wsdl:output message="tns:descuentoPromocion6SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion7">
+      <wsdl:input message="tns:descuentoPromocion7SoapIn" />
+      <wsdl:output message="tns:descuentoPromocion7SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion8">
+      <wsdl:input message="tns:descuentoPromocion8SoapIn" />
+      <wsdl:output message="tns:descuentoPromocion8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion9">
+      <wsdl:input message="tns:descuentoPromocion9SoapIn" />
+      <wsdl:output message="tns:descuentoPromocion9SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion10">
+      <wsdl:input message="tns:descuentoPromocion10SoapIn" />
+      <wsdl:output message="tns:descuentoPromocion10SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="impuestoCoñaq">
+      <wsdl:input message="tns:impuestoCoñaqSoapIn" />
+      <wsdl:output message="tns:impuestoCoñaqSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="impuestoWiskey">
+      <wsdl:input message="tns:impuestoWiskeySoapIn" />
+      <wsdl:output message="tns:impuestoWiskeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="impuestoTequila">
+      <wsdl:input message="tns:impuestoTequilaSoapIn" />
+      <wsdl:output message="tns:impuestoTequilaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="impuestoCerveza">
+      <wsdl:input message="tns:impuestoCervezaSoapIn" />
+      <wsdl:output message="tns:impuestoCervezaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="impuestoIVA">
+      <wsdl:input message="tns:impuestoIVASoapIn" />
+      <wsdl:output message="tns:impuestoIVASoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceOperacionesSoap" type="tns:WebServiceOperacionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioVenta">
+      <soap:operation soapAction="http://tempuri.org/precioVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoMayoreo">
+      <soap:operation soapAction="http://tempuri.org/descuentoMayoreo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioWiskey">
+      <soap:operation soapAction="http://tempuri.org/precioWiskey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioTequila">
+      <soap:operation soapAction="http://tempuri.org/precioTequila" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioCerveza">
+      <soap:operation soapAction="http://tempuri.org/precioCerveza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioCoñaq">
+      <soap:operation soapAction="http://tempuri.org/precioCoñaq" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioMedicamentos">
+      <soap:operation soapAction="http://tempuri.org/precioMedicamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IvaExento">
+      <soap:operation soapAction="http://tempuri.org/IvaExento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion5">
+      <soap:operation soapAction="http://tempuri.org/descuentoPromocion5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion6">
+      <soap:operation soapAction="http://tempuri.org/descuentoPromocion6" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion7">
+      <soap:operation soapAction="http://tempuri.org/descuentoPromocion7" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion8">
+      <soap:operation soapAction="http://tempuri.org/descuentoPromocion8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion9">
+      <soap:operation soapAction="http://tempuri.org/descuentoPromocion9" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion10">
+      <soap:operation soapAction="http://tempuri.org/descuentoPromocion10" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoCoñaq">
+      <soap:operation soapAction="http://tempuri.org/impuestoCoñaq" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoWiskey">
+      <soap:operation soapAction="http://tempuri.org/impuestoWiskey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoTequila">
+      <soap:operation soapAction="http://tempuri.org/impuestoTequila" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoCerveza">
+      <soap:operation soapAction="http://tempuri.org/impuestoCerveza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoIVA">
+      <soap:operation soapAction="http://tempuri.org/impuestoIVA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceOperacionesSoap12" type="tns:WebServiceOperacionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioVenta">
+      <soap12:operation soapAction="http://tempuri.org/precioVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoMayoreo">
+      <soap12:operation soapAction="http://tempuri.org/descuentoMayoreo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioWiskey">
+      <soap12:operation soapAction="http://tempuri.org/precioWiskey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioTequila">
+      <soap12:operation soapAction="http://tempuri.org/precioTequila" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioCerveza">
+      <soap12:operation soapAction="http://tempuri.org/precioCerveza" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioCoñaq">
+      <soap12:operation soapAction="http://tempuri.org/precioCoñaq" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="precioMedicamentos">
+      <soap12:operation soapAction="http://tempuri.org/precioMedicamentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IvaExento">
+      <soap12:operation soapAction="http://tempuri.org/IvaExento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion5">
+      <soap12:operation soapAction="http://tempuri.org/descuentoPromocion5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion6">
+      <soap12:operation soapAction="http://tempuri.org/descuentoPromocion6" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion7">
+      <soap12:operation soapAction="http://tempuri.org/descuentoPromocion7" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion8">
+      <soap12:operation soapAction="http://tempuri.org/descuentoPromocion8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion9">
+      <soap12:operation soapAction="http://tempuri.org/descuentoPromocion9" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoPromocion10">
+      <soap12:operation soapAction="http://tempuri.org/descuentoPromocion10" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoCoñaq">
+      <soap12:operation soapAction="http://tempuri.org/impuestoCoñaq" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoWiskey">
+      <soap12:operation soapAction="http://tempuri.org/impuestoWiskey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoTequila">
+      <soap12:operation soapAction="http://tempuri.org/impuestoTequila" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoCerveza">
+      <soap12:operation soapAction="http://tempuri.org/impuestoCerveza" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="impuestoIVA">
+      <soap12:operation soapAction="http://tempuri.org/impuestoIVA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceOperaciones">
+    <wsdl:port name="WebServiceOperacionesSoap" binding="tns:WebServiceOperacionesSoap">
+      <soap:address location="http://localhost:8/WebServiceOperaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceOperacionesSoap12" binding="tns:WebServiceOperacionesSoap12">
+      <soap12:address location="http://localhost:8/WebServiceOperaciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

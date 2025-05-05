@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\ProyectosAplicacionesWeb\\MiPrimerServicioWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74AC6667-C74C-4983-89AC-B1EF82D1F45C}|Test1\\Test1.csproj|f:\\proyectosaplicacionesweb\\miprimerservicioweb\\test1\\webserviceoperaciones.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74AC6667-C74C-4983-89AC-B1EF82D1F45C}|Test1\\Test1.csproj|solutionrelative:test1\\webserviceoperaciones.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{f2bd8fb8-fc94-3dae-a733-fd993c73cc87}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebServiceOperaciones.asmx.cs",
+              "DocumentMoniker": "F:\\ProyectosAplicacionesWeb\\MiPrimerServicioWeb\\Test1\\WebServiceOperaciones.asmx.cs",
+              "RelativeDocumentMoniker": "Test1\\WebServiceOperaciones.asmx.cs",
+              "ToolTip": "F:\\ProyectosAplicacionesWeb\\MiPrimerServicioWeb\\Test1\\WebServiceOperaciones.asmx.cs",
+              "RelativeToolTip": "Test1\\WebServiceOperaciones.asmx.cs",
+              "ViewState": "AgIAACoBAAAAAAAAAAAmwEEBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:30:10.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
