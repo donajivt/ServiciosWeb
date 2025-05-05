@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "..\\..\\InterfacesCompras\\InterfacesCompras\\InterfacesCompras.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Rest.Api.Compras.Sql\\Rest.Api.Compras.Sql.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

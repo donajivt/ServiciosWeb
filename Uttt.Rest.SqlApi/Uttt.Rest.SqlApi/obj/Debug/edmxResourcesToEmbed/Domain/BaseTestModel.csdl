@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="basetestmodelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Direcciones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Calle" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Colonia" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="CodigoPostal" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="NumeroInterior" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="NumeroExterior" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Municipio" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="IdPersona" Type="Int32" />
+    <NavigationProperty Name="Personas" Relationship="Self.fk_Personas" FromRole="Direcciones" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Rfc" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Edad" Type="Int32" />
+    <Property Name="IdTelefono" Type="Int32" />
+    <NavigationProperty Name="Direcciones" Relationship="Self.fk_Personas" FromRole="Personas" ToRole="Direcciones" />
+    <NavigationProperty Name="Telefonos" Relationship="Self.fk_Telefono" FromRole="Personas" ToRole="Telefonos" />
+  </EntityType>
+  <EntityType Name="Telefonos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TelefonoCelular" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="TelefonoCasa" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Personas" Relationship="Self.fk_Telefono" FromRole="Telefonos" ToRole="Personas" />
+  </EntityType>
+  <Association Name="fk_Personas">
+    <End Role="Personas" Type="Self.Personas" Multiplicity="0..1" />
+    <End Role="Direcciones" Type="Self.Direcciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Direcciones">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Telefono">
+    <End Role="Telefonos" Type="Self.Telefonos" Multiplicity="0..1" />
+    <End Role="Personas" Type="Self.Personas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Telefonos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Personas">
+        <PropertyRef Name="IdTelefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="basetestmodelEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Direcciones" EntityType="Self.Direcciones" />
+    <EntitySet Name="Personas" EntityType="Self.Personas" />
+    <EntitySet Name="Telefonos" EntityType="Self.Telefonos" />
+    <AssociationSet Name="fk_Personas" Association="Self.fk_Personas">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="Direcciones" EntitySet="Direcciones" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Telefono" Association="Self.fk_Telefono">
+      <End Role="Telefonos" EntitySet="Telefonos" />
+      <End Role="Personas" EntitySet="Personas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="comprasModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="articulos">
+    <Key>
+      <PropertyRef Name="cod_barras" />
+    </Key>
+    <Property Name="cod_barras" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cod_asociado" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="id_clasificacion" Type="Int64" Nullable="false" />
+    <Property Name="cod_interno" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion_corta" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cantidad_um" Type="Decimal" Precision="19" Scale="3" Nullable="false" />
+    <Property Name="id_unidad" Type="Guid" Nullable="false" />
+    <Property Name="id_proveedor" Type="Guid" Nullable="false" />
+    <Property Name="precio_compra" Type="Decimal" Precision="19" Scale="3" Nullable="false" />
+    <Property Name="utilidad" Type="Decimal" Precision="19" Scale="3" Nullable="false" />
+    <Property Name="precio_venta" Type="Decimal" Precision="19" Scale="3" Nullable="false" />
+    <Property Name="tipo_articulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="stock" Type="Decimal" Precision="19" Scale="3" Nullable="false" />
+    <Property Name="stock_min" Type="Decimal" Precision="19" Scale="3" Nullable="false" />
+    <Property Name="stock_max" Type="Decimal" Precision="19" Scale="3" Nullable="false" />
+    <Property Name="kit_fecha_ini" Type="DateTime" Precision="3" />
+    <Property Name="kit_fecha_fin" Type="DateTime" Precision="3" />
+    <Property Name="articulo_disponible" Type="Boolean" Nullable="false" />
+    <Property Name="kit" Type="Boolean" Nullable="false" />
+    <Property Name="fecha_registro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="visible" Type="Boolean" Nullable="false" />
+    <Property Name="puntos" Type="Int16" Nullable="false" />
+    <Property Name="last_update_inventory" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cve_productos" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_objeto_impuesto" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="comprasEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="articulos" EntityType="Self.articulos" />
+  </EntityContainer>
+</Schema>

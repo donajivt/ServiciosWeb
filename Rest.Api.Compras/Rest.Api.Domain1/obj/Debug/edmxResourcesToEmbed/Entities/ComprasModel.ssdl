@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="comprasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="articulos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cod_barras" Type="varchar" MaxLength="15" />
+    <Property Name="cod_asociado" Type="varchar" MaxLength="15" />
+    <Property Name="id_clasificacion" Type="bigint" />
+    <Property Name="cod_interno" Type="varchar" MaxLength="15" />
+    <Property Name="descripcion" Type="varchar" MaxLength="80" />
+    <Property Name="descripcion_corta" Type="varchar" MaxLength="30" />
+    <Property Name="cantidad_um" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="id_unidad" Type="uniqueidentifier" />
+    <Property Name="id_proveedor" Type="uniqueidentifier" />
+    <Property Name="precio_compra" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="utilidad" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="precio_venta" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="tipo_articulo" Type="varchar" MaxLength="50" />
+    <Property Name="stock" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="stock_min" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="stock_max" Type="decimal" Precision="19" Scale="3" />
+    <Property Name="kit_fecha_ini" Type="datetime" />
+    <Property Name="kit_fecha_fin" Type="datetime" />
+    <Property Name="articulo_disponible" Type="bit" />
+    <Property Name="kit" Type="bit" />
+    <Property Name="fecha_registro" Type="datetime" />
+    <Property Name="visible" Type="bit" />
+    <Property Name="puntos" Type="smallint" />
+    <Property Name="last_update_inventory" Type="datetime" />
+    <Property Name="cve_producto" Type="varchar" MaxLength="15" />
+    <Property Name="id_objeto_impuesto" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="comprasModelStoreContainer">
+    <EntitySet Name="articulos" EntityType="Self.articulos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

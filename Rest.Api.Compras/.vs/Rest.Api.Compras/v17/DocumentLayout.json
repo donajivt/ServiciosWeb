@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9598ACAB-2886-4855-960E-5FB01116C7A2}|Rest.Api.Compras\\Rest.Api.Compras.csproj|f:\\proyectosserviciosweb\\rest.api.compras\\rest.api.compras\\controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9598ACAB-2886-4855-960E-5FB01116C7A2}|Rest.Api.Compras\\Rest.Api.Compras.csproj|solutionrelative:rest.api.compras\\controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\rest.api.domain1\\infraestructura\\irepositorioarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|solutionrelative:rest.api.domain1\\infraestructura\\irepositorioarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\rest.api.domain1\\repositorio\\repositorioarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|solutionrelative:rest.api.domain1\\repositorio\\repositorioarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\rest.api.domain1\\entities\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|solutionrelative:rest.api.domain1\\entities\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\rest.api.domain1\\entities\\comprasmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|solutionrelative:rest.api.domain1\\entities\\comprasmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9598ACAB-2886-4855-960E-5FB01116C7A2}|Rest.Api.Compras\\Rest.Api.Compras.csproj|F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\rest.api.compras\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9598ACAB-2886-4855-960E-5FB01116C7A2}|Rest.Api.Compras\\Rest.Api.Compras.csproj|solutionrelative:rest.api.compras\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\rest.api.domain1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{054C0CE4-9F2F-4BB9-8E43-E419AE910108}|Rest.Api.Domain1\\Rest.Api.Domain1.csproj|solutionrelative:rest.api.domain1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vania\\Downloads\\InterfacesCompras\\InterfacesCompras\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{f2bd8fb8-fc94-3dae-a733-fd993c73cc87}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRepositorioArticulos.cs",
+              "DocumentMoniker": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Infraestructura\\IRepositorioArticulos.cs",
+              "RelativeDocumentMoniker": "Rest.Api.Domain1\\Infraestructura\\IRepositorioArticulos.cs",
+              "ToolTip": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Infraestructura\\IRepositorioArticulos.cs",
+              "RelativeToolTip": "Rest.Api.Domain1\\Infraestructura\\IRepositorioArticulos.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:15:02.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArticulosController.cs",
+              "DocumentMoniker": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Compras\\Controllers\\ArticulosController.cs",
+              "RelativeDocumentMoniker": "Rest.Api.Compras\\Controllers\\ArticulosController.cs",
+              "ToolTip": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Compras\\Controllers\\ArticulosController.cs",
+              "RelativeToolTip": "Rest.Api.Compras\\Controllers\\ArticulosController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:15:02.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vania\\Downloads\\InterfacesCompras\\InterfacesCompras\\Form1.cs",
+              "ToolTip": "C:\\Users\\vania\\Downloads\\InterfacesCompras\\InterfacesCompras\\Form1.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAYwGAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:15:02.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Compras\\Web.config",
+              "RelativeDocumentMoniker": "Rest.Api.Compras\\Web.config",
+              "ToolTip": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Compras\\Web.config",
+              "RelativeToolTip": "Rest.Api.Compras\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-05T03:15:02.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "articulos.cs",
+              "DocumentMoniker": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Entities\\articulos.cs",
+              "RelativeDocumentMoniker": "Rest.Api.Domain1\\Entities\\articulos.cs",
+              "ToolTip": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Entities\\articulos.cs",
+              "RelativeToolTip": "Rest.Api.Domain1\\Entities\\articulos.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAqwCUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2025-05-05T03:15:02.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositorioArticulos.cs",
+              "DocumentMoniker": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Repositorio\\RepositorioArticulos.cs",
+              "RelativeDocumentMoniker": "Rest.Api.Domain1\\Repositorio\\RepositorioArticulos.cs",
+              "ToolTip": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Repositorio\\RepositorioArticulos.cs",
+              "RelativeToolTip": "Rest.Api.Domain1\\Repositorio\\RepositorioArticulos.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAgwGMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T03:15:02.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComprasModel.edmx [Diagram1]",
+              "DocumentMoniker": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Entities\\ComprasModel.edmx",
+              "RelativeDocumentMoniker": "Rest.Api.Domain1\\Entities\\ComprasModel.edmx",
+              "ToolTip": "C:\\Users\\vania\\OneDrive\\Documents\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\Entities\\ComprasModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-05-05T03:15:02.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\App.config",
+              "RelativeDocumentMoniker": "Rest.Api.Domain1\\App.config",
+              "ToolTip": "F:\\ProyectosServiciosWeb\\Rest.Api.Compras\\Rest.Api.Domain1\\App.config",
+              "RelativeToolTip": "Rest.Api.Domain1\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAACWAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-05T03:15:02.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

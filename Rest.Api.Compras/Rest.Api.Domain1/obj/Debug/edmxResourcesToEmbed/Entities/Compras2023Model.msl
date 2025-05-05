@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="comprasModelStoreContainer" CdmEntityContainer="comprasEntities">
+    <EntitySetMapping Name="articulos">
+      <EntityTypeMapping TypeName="comprasModel.articulos">
+        <MappingFragment StoreEntitySet="articulos">
+          <ScalarProperty Name="cod_barras" ColumnName="cod_barras" />
+          <ScalarProperty Name="cod_asociado" ColumnName="cod_asociado" />
+          <ScalarProperty Name="id_clasificacion" ColumnName="id_clasificacion" />
+          <ScalarProperty Name="cod_interno" ColumnName="cod_interno" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="descripcion_corta" ColumnName="descripcion_corta" />
+          <ScalarProperty Name="cantidad_um" ColumnName="cantidad_um" />
+          <ScalarProperty Name="id_unidad" ColumnName="id_unidad" />
+          <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
+          <ScalarProperty Name="precio_compra" ColumnName="precio_compra" />
+          <ScalarProperty Name="utilidad" ColumnName="utilidad" />
+          <ScalarProperty Name="precio_venta" ColumnName="precio_venta" />
+          <ScalarProperty Name="tipo_articulo" ColumnName="tipo_articulo" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="stock_min" ColumnName="stock_min" />
+          <ScalarProperty Name="stock_max" ColumnName="stock_max" />
+          <ScalarProperty Name="kit_fecha_ini" ColumnName="kit_fecha_ini" />
+          <ScalarProperty Name="kit_fecha_fin" ColumnName="kit_fecha_fin" />
+          <ScalarProperty Name="articulo_disponible" ColumnName="articulo_disponible" />
+          <ScalarProperty Name="kit" ColumnName="kit" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
+          <ScalarProperty Name="visible" ColumnName="visible" />
+          <ScalarProperty Name="puntos" ColumnName="puntos" />
+          <ScalarProperty Name="last_update_inventory" ColumnName="last_update_inventory" />
+          <ScalarProperty Name="cve_productos" ColumnName="cve_productos" />
+          <ScalarProperty Name="id_objeto_impuesto" ColumnName="id_objeto_impuesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
